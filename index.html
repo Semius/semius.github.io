@@ -1,80 +1,91 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Semius: desarrollador de aplicaciones Android. Descubre mis apps disponibles en Google Play.">
+  <meta name="theme-color" content="#0b1220">
+  <title>Semius | Android Developer</title>
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: #0b1220;
+      color: #eef3fa;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+    a { color: inherit; }
+    .page { max-width: 1050px; margin: 0 auto; padding: 0 28px; }
+    header { border-bottom: 1px solid rgba(255,255,255,.09); }
+    header .page { min-height: 80px; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 800; font-size: 1.3rem; letter-spacing: .03em; text-decoration: none; }
+    .brand-mark { display: inline-grid; place-items: center; width: 36px; height: 36px; color: #0b1220; background: #6ee7c2; border-radius: 12px; font-weight: 900; }
+    nav a { color: #a8b6ca; font-size: .92rem; text-decoration: none; }
+    nav a:hover, nav a:focus-visible { color: #6ee7c2; }
+    .hero { padding: 110px 0 85px; }
+    .eyebrow { display: inline-block; color: #6ee7c2; font-size: .78rem; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; }
+    h1 { font-size: clamp(3rem, 8vw, 6rem); line-height: 1.04; letter-spacing: -.055em; margin: 18px 0 24px; }
+    h1 span { color: #6ee7c2; }
+    .hero p { max-width: 600px; font-size: 1.15rem; color: #a8b6ca; margin: 0 0 32px; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 12px 22px; border-radius: 12px; background: #6ee7c2; color: #0b1220; font-weight: 750; text-decoration: none; transition: transform .2s, background .2s; }
+    .btn:hover, .btn:focus-visible { transform: translateY(-2px); background: #9cf3d7; }
+    .apps { padding: 0 0 100px; }
+    h2 { font-size: 1.55rem; letter-spacing: -.035em; margin: 0 0 24px; }
+    .app-card { display: flex; align-items: center; gap: 24px; padding: 30px; border: 1px solid #263449; border-radius: 20px; background: #121e30; }
+    .app-icon { display: grid; place-items: center; flex: 0 0 92px; height: 92px; border-radius: 22px; background: linear-gradient(135deg, #1b8dce, #64d3ba); font-size: 2.8rem; }
+    .app-details { flex: 1; }
+    .app-tag { display: block; font-size: .76rem; letter-spacing: .11em; text-transform: uppercase; color: #6ee7c2; font-weight: 750; }
+    h3 { font-size: 1.38rem; margin: 5px 0 6px; }
+    .app-details p { margin: 0; color: #a8b6ca; }
+    .app-link { color: #6ee7c2; text-decoration: none; font-weight: 700; white-space: nowrap; }
+    .app-link:hover, .app-link:focus-visible { text-decoration: underline; }
+    footer { border-top: 1px solid rgba(255,255,255,.09); color: #8d9caf; font-size: .9rem; }
+    footer .page { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding-top: 25px; padding-bottom: 25px; }
+    @media (max-width: 650px) {
+      .hero { padding: 80px 0 70px; }
+      .app-card { align-items: flex-start; flex-direction: column; }
+      .app-icon { flex-basis: auto; width: 80px; height: 80px; }
+    }
+  </style>
+</head>
 <body>
-<h2>Privacy Policy</h2>
-<p>Semius built the Secret Camera app as a ad-supported app. This SERVICE is provided by Semius at no cost and is intended
-    for use as is.</p>
-<p>This page is used to inform website visitors regarding my policies with the collection, use, and
-    disclosure of Personal Information if anyone decided to use my Service.</p>
-<p>If you choose to use my Service, then you agree to the collection and use of information in
-    relation with this policy. The Personal Information that I collect are used for providing and
-    improving the Service. I will not use or share your information with anyone except as described
-    in this Privacy Policy.</p>
-<p>The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions,
-    which is accessible at Secret Camera, unless otherwise defined in this Privacy Policy.</p>
+  <header>
+    <div class="page">
+      <a class="brand" href="/" aria-label="Semius, inicio"><span class="brand-mark">S</span> SEMIUS</a>
+      <nav aria-label="Navegación principal"><a href="#apps">Mis aplicaciones</a></nav>
+    </div>
+  </header>
 
-<p><strong>Information Collection and Use</strong></p>
-<p>For a better experience while using our Service, I may require you to provide us with certain
-    personally identifiable information.. 
-	The information that I request is retained on your device and is not
-    collected by me in any way.</p>
-<p>The app does use third party services that may collect information used to identify you.
+  <main class="page">
+    <section class="hero" aria-labelledby="titulo">
+      <span class="eyebrow">Desarrollo de aplicaciones móviles</span>
+      <h1 id="titulo">Android<br><span>Developer.</span></h1>
+      <p>Soy desarrollador de aplicaciones Android. Creo apps útiles, intuitivas y pensadas para ofrecer una buena experiencia de usuario.</p>
+      <a class="btn" href="#apps">Descubre mis aplicaciones ↓</a>
+    </section>
 
-<p><strong>Log Data</strong></p>
-<p>I want to inform you that whenever you use my Service, in case of an error in the app I collect
-    data and information (through third party products) on your phone called Log Data. This Log Data
-    may include information such as your devices’s Internet Protocol (“IP”) address, device name,
-    operating system version, configuration of the app when utilising my Service, the time and date
-    of your use of the Service, and other statistics.</p>
+    <section class="apps" id="apps" aria-labelledby="apps-titulo">
+      <h2 id="apps-titulo">Aplicaciones en Google Play</h2>
+      <article class="app-card">
+        <div class="app-icon" aria-hidden="true">🌊</div>
+        <div class="app-details">
+          <span class="app-tag">Educación · Android</span>
+          <h3>Aprender los ríos de España</h3>
+          <p>Aprende a localizar los principales ríos de España y pon a prueba tus conocimientos con un test interactivo.</p>
+        </div>
+        <a class="app-link" href="https://play.google.com/store/apps/details?id=com.semius.riosspain" target="_blank" rel="noopener noreferrer" aria-label="Ver Aprender los ríos de España en Google Play">Ver en Google Play ↗</a>
+      </article>
+    </section>
+  </main>
 
-<p><strong>Cookies</strong></p>
-<p>Cookies are files with small amount of data that is commonly used an anonymous unique identifier.
-    These are sent to your browser from the website that you visit and are stored on your devices’s
-    internal memory.</p>
-<p>>!-- Check if this is true for your app, if unsure, just assume that you do use cookies and modify this next line -->This Services does not uses these “cookies” explicitly. However, the app may use third party code
-    and libraries that use “cookies” to collection information and to improve their services. You
-    have the option to either accept or refuse these cookies, and know when a cookie is being sent
-    to your device. If you choose to refuse our cookies, you may not be able to use some portions of
-    this Service.</p>
-
-<p><strong>Service Providers</strong></p> <!-- This part need seem like it's not needed, but if you use any Google services, or any other third party libraries, chances are, you need this. -->
-<p>I may employ third-party companies and individuals due to the following reasons:</p>
-<ul>
-    <li>To facilitate our Service;</li>
-    <li>To provide the Service on our behalf;</li>
-    <li>To perform Service-related services; or</li>
-    <li>To assist us in analyzing how our Service is used.</li>
-</ul>
-<p>I want to inform users of this Service that these third parties have access to your Personal
-    Information. The reason is to perform the tasks assigned to them on our behalf. However, they
-    are obligated not to disclose or use the information for any other purpose.</p>
-
-<p><strong>Security</strong></p>
-<p>I value your trust in providing us your Personal Information, thus we are striving to use
-    commercially acceptable means of protecting it. But remember that no method of transmission over
-    the internet, or method of electronic storage is 100% secure and reliable, and [I|we] cannot
-    guarantee its absolute security.</p>
-
-<p><strong>Links to Other Sites</strong></p>
-<p>This Service may contain links to other sites. If you click on a third-party link, you will be
-    directed to that site. Note that these external sites are not operated by [me|us]. Therefore, I
-    strongly advise you to review the Privacy Policy of these websites. I have no control over, and
-    assume no responsibility for the content, privacy policies, or practices of any third-party
-    sites or services.</p>
-
-<p><strong>Children’s Privacy</strong></p>
-<p>This Services do not address anyone under the age of 13. I do not knowingly collect personal
-    identifiable information from children under 13. In the case I discover that a child under 13
-    has provided me with personal information, I immediately delete this from our servers. If you
-    are a parent or guardian and you are aware that your child has provided us with personal
-    information, please contact me so that I will be able to do necessary actions.</p>
-
-<p><strong>Changes to This Privacy Policy</strong></p>
-<p>I may update our Privacy Policy from time to time. Thus, you are advised to review this page
-    periodically for any changes. I will notify you of any changes by posting the new Privacy Policy
-    on this page. These changes are effective immediately, after they are posted on this page.</p>
-
-<p><strong>Contact Us</strong></p>
-<p>If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact
-    me.</p>
+  <footer>
+    <div class="page">
+      <span>© 2026 Semius · Android Developer</span>
+      <span>Aplicaciones disponibles en Google Play</span>
+    </div>
+  </footer>
 </body>
 </html>
